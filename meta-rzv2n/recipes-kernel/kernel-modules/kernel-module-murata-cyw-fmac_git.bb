@@ -6,7 +6,7 @@ SRC_URI = "git://github.com/SolidRun/cyw-fmac.git;protocol=https;branch=imx-kirk
 SRCREV = "4939b3eb11d3b9b13c62589ee732f59b1f55bf83"
 LIC_FILES_CHKSUM = "file://${COREBASE}/meta/files/common-licenses/GPL-2.0-only;md5=801f80980d171dd6425610833a22dbe6"
 
-S = "${WORKDIR}/git"
+S = "${UNPACKDIR}/${BB_GIT_DEFAULT_DESTSUFFIX}"
 
 inherit module
 

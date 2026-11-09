@@ -13,7 +13,7 @@ SRC_URI = "file://v4l2n-init-imx678-dev.sh \
            file://debayer_raw12_to_bmp.py \
            "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_install() {
     install -d ${D}/root

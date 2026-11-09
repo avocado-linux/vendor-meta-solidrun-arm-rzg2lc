@@ -12,7 +12,7 @@ SRC_URI = " \
     file://quickdraw.service \
 "
 
-S = "${WORKDIR}/deploy_quick_draw_v1.2"
+S = "${UNPACKDIR}/deploy_quick_draw_v1.2"
 
 SYSTEMD_AUTO_ENABLE = "enable"
 SYSTEMD_SERVICE:${PN} = "quickdraw.service"
@@ -31,7 +31,7 @@ do_install() {
 
     # Install systemd service
     install -d ${D}${systemd_unitdir}/system
-    install -m 0644 ${WORKDIR}/quickdraw.service ${D}${systemd_unitdir}/system/quickdraw.service
+    install -m 0644 ${UNPACKDIR}/quickdraw.service ${D}${systemd_unitdir}/system/quickdraw.service
 }
 
 FILES:${PN} = " \

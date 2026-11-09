@@ -19,7 +19,7 @@ LIC_FILES_CHKSUM = " \
 	file://overlay/common/lib/firmware/renesas/LICENSE.da16200;md5=59fc8504af5dd513a2addda68571f157 \
 "
 
-S = "${WORKDIR}/git"
+S = "${UNPACKDIR}/${BB_GIT_DEFAULT_DESTSUFFIX}"
 
 do_install:append() {
 	# create destination directories

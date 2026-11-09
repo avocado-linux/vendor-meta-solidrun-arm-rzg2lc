@@ -6,7 +6,7 @@ SRC_URI = "git://github.com/SolidRun/rswlan.git;protocol=https;branch=develop"
 SRCREV = "da495193c45ce6602d4befb886378bb082d342c3"
 LIC_FILES_CHKSUM = "file://${COREBASE}/meta/files/common-licenses/GPL-2.0-only;md5=801f80980d171dd6425610833a22dbe6"
 
-S = "${WORKDIR}/git"
+S = "${UNPACKDIR}/${BB_GIT_DEFAULT_DESTSUFFIX}"
 
 inherit module
 
